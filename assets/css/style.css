@@ -1,0 +1,294 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+
+h1{
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 200;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+    text-transform: none !important;
+   -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+h2{
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 200;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
+    font-size: larger;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+* {
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+}
+body{
+    padding: 0px;
+    margin:0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.bg-image{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/bg_img.jpg");
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
+	background-size: 400% 400%;
+    padding: 0px;
+    margin: 0px;
+    -webkit-animation: gradientBG 10s ease infinite;
+    animation: gradientBG 10s ease infinite;
+  }
+
+.container{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+   
+   
+}
+.container::after{
+   
+    box-shadow: inset 0 0 2000px rgb(214, 208, 208);
+    filter: blur(10px);
+}
+.child{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    min-width: 400px;
+    min-height: 400px;
+    /* Center vertically and horizontally */
+    top: 45%;
+    left: 50%;
+    margin: -200px 0 0 -200px;
+    border-radius: 5px;
+    display: block;
+    background-color: rgba(214, 208, 208, 0.404);
+}
+.data,li{
+    width: 100%;
+    padding: 1px;
+    display: block;
+}
+img{
+    border-radius: 122px;
+    border: rgba(116, 96, 96, 0.486) 2px solid;
+}
+.divider{
+    margin: 0 auto;
+    align-self: center;
+    align-items: center;
+    width: 80%;
+    height: 1px;
+    background-color: rgba(92, 86, 86, 0.26);
+}
+
+.icon{
+    border-radius: 5px;
+    border: 1px solid rgba(92, 86, 86, 0.26);
+    margin: 10px;
+}
+
+.fillicons{
+    fill: #e73c7e73;
+}
+
+.social{
+    margin-top: 35px;
+}
+
+svg{
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    fill: #e73c7e00;
+    fill-opacity: 1;
+    color: red;
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+    .child{
+        position: absolute;
+        width: 80%;
+        height: 60%;
+        min-width: 80%;
+        min-height: 45%;
+        /* Center vertically and horizontally */
+        top: 10%;
+        left: 50%;
+        margin: 20% 0 0 -40%;
+        border-radius: 5px;
+        display: block;
+        background-color: rgba(214, 208, 208, 0.404);
+    }
+
+
+    img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        border: skyblue 2px solid;
+    }
+
+
+    h1{
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        font-weight: 200;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        text-transform: none !important;
+        font-size: large;
+    }
+    h2{
+        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        font-weight: 200;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+        font-size: small;
+    }
+
+
+    .icon{
+        border-radius: 5px;
+        border: 1px solid #be19197e;
+        margin: 10px;
+    }
+    
+    .fillicons{
+        fill: #e73c7e;
+    }
+    
+    svg{
+        width: 34px;
+        height: 34px;
+        padding: 10px;
+        fill: #e73c7e00;
+        fill-opacity: 1;
+        color: red;
+    }
+
+    .social{
+        margin-top: 10px;
+    }
+    
+    
+
+
+}
+
+
+
+
+.icon:hover{
+    cursor: pointer;
+}
+
+
+.icon.tw:hover .fillicons.tw{
+    fill: skyblue;
+}
+
+.icon.fb:hover .fillicons.fb{
+    fill: #3b50ad;
+}
+.icon.ig:hover .fillicons.ig{
+    fill: #aa09db;
+}
+.icon.gh:hover .fillicons.gh{
+    fill: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  @keyframes blur-img {
+    from {
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+    to {
+        filter: blur(2px);
+        -webkit-filter: blur(20px);
+    }
+  }
+  @keyframes display-main {
+    from {
+        transform: rotateX(0deg);
+        
+        
+    }
+    to {
+     
+     }
+  }
+
+  @-webkit-keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+    @keyframes gradientBG {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
