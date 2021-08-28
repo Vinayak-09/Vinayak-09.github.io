@@ -1,14 +1,16 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 h1{
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
     -moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
     font-style: normal;
     font-variant: normal;
 	text-rendering: auto;
+    color: beige;
 	line-height: 1;
     text-transform: none !important;
    -webkit-touch-callout: none;
@@ -16,16 +18,18 @@ h1{
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    font-size: 3em;
     user-select: none;
 }
 h2{
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
+    
     -moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
     font-style: normal;
     font-variant: normal;
 	text-rendering: auto;
+    color: beige;
 	line-height: 1;
     font-size: larger;
     -webkit-touch-callout: none;
