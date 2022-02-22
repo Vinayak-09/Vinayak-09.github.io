@@ -1,0 +1,405 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body{
+    padding-top: 1vh;
+    background-color: #1b1b1b;
+    background-size: unset;
+    background-repeat: repeat;
+    height: 98vh;
+}
+
+nav{
+    display: flex;
+    height: 6%;
+    background-color: #202c33;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+}
+
+
+.dpimg{
+    cursor: pointer;
+    border-radius: 100%;
+    width: 5%;
+    height: 5%;
+    height: auto;
+    margin: auto 0px;
+    margin-left: 10px;
+}
+
+.navbar .personalInfo{
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0px;
+    margin-left: 2%;
+}
+
+.personalInfo #name{
+    color: #e9edef;
+    margin-bottom: 4px;
+}
+
+.personalInfo #lastseen{
+    color: #8696a0;
+    font-size: small;
+}
+
+
+.scrollable{
+    overflow-y: scroll;
+    color: #fff;
+    display: flex;
+    height: 88%;
+    flex-direction: column;
+    background-image: url('images/bg.webp');
+    align-items: flex-end;
+    position: relative;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    position: relative;
+}
+
+.scrollable .chatting{
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width:none; 
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.scrollable .chatting::-webkit-scrollbar {
+    display: none;
+  }
+
+#listUL{
+    overflow-y: hidden;
+    position: static;
+    width: 100%;
+    bottom: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#listUL li{
+    width: 100%;
+    text-decoration: none;
+    flex-direction: row-reverse;
+}
+
+.sent{
+    text-align: end;
+    float: right;
+    width: auto;
+    max-width: 45%;
+}
+
+.green{
+    margin: 5px;
+    text-align: start;
+    width: auto;
+    padding: 10px;
+    background-color: #005c4b;
+    border-radius: 15px 15px 0px;
+}
+
+#sentlabel{
+    color: #94bab3;
+    display: block;
+    text-align: end;
+    font-size: x-small;
+}
+
+.recieved{
+    float: left;
+    width: 45%;
+    max-width: 45%;
+    background-color: red;
+
+}
+
+
+.grey{
+    max-width: 45%;
+    margin: 5px;
+    text-align: start;
+    width: auto;
+    padding: 10px;
+    background-color: #202c33;
+    border-radius: 0px 15px 15px;
+}
+
+.grey .mapview{
+    margin: auto;
+    display: flex;
+    padding: 5px;
+}
+
+.add address{
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.map{
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dateLabel{
+    color: #94bab3;
+    display: block;
+    text-align: end;
+    font-size: x-small;
+}
+
+
+/* help menu bold words color  */
+
+.sk .bold{
+    color: rgba(219, 154, 33, 0.822);
+}
+
+
+/* resume thumbnail in received class*/
+.resumeThumbnail{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.downloadSpace{
+    background-color: #1d282f;
+    display: flex;
+    width: 100%;
+}
+.downloadSpace .pdfname{
+    display: flex;
+    width: 100%;
+}
+.pdfname label{
+    margin: auto 0px;
+}
+.downloadSpace img{
+    width: 30px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* this css is used for embedded html in messages */
+.bold{
+    font-weight: bold;
+}
+
+.alink{
+    color: goldenrod;
+    transition: all 600ms ease;
+    text-decoration: none;
+}
+
+.alink:hover{
+    text-decoration: none;
+    color: green;
+}
+
+/* this css is used for social links message */
+
+.social{
+    padding: 10px;
+}
+
+.social .socialItem{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #94bab3;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 10px;
+    transition: all 500ms ease-in-out;
+}
+
+.social .socialItemI{
+    margin: auto;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.social .socialItem:hover{
+    background-color: rgba(58, 170, 58, 0.863);
+}
+#call{
+    flex-direction: column;
+    text-align: center;
+}
+
+.number{
+    display: none;
+}
+
+
+
+
+.scrollable .fullScreenDP{
+    transition: all 700ms ease-in-out;
+    position: absolute;;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    background-color: #2f2f2fec;
+    z-index: 1000;
+}
+
+.scrollable .fullScreenDP .insideDP{
+    display: flex;
+    margin: auto;
+    scrollbar-width: 0px;
+}
+
+.closeBTN{
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    margin-left: 6%;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+
+.btnColor{
+    fill: rgba(0, 0, 0, 0.692);
+    transition: all 400ms ease-in-out;
+}
+
+.closeBTN:hover .btnColor{
+    fill: red;
+}
+
+
+
+.scrollable .fullScreenDP .insideDP .dp{
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: auto;
+    background-color: #202c33;
+    text-align: center;
+}
+
+.sendBar{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+.sendBar svg{
+    margin: auto;
+    height: 40%;
+    min-height: 40%;
+
+}
+
+.sendBar input[type='text']{
+    margin: auto;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    float: left;
+    width: 80%;
+    height: 100%;
+    outline-color: transparent;
+    accent-color: transparent;
+    background-color: #2a3942;
+    outline: none;
+    border-color: transparent;
+}
+
+
+::placeholder { 
+    color: #8696a0;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder { 
+    color: #8696a0;
+  }
+  
+  ::-ms-input-placeholder { 
+    color: #8696a0;
+  }
+
+
+
+@media screen and (min-width: 1024px) {
+
+    body{
+        margin: auto;
+        width: 50vw;
+    }
+
+    .sendBar{
+        width: 85%;
+    }
+
+    .scrollable{
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+        position: relative;
+        overflow: hidden;
+    }
+
+    
+
+    .scrollable .fullScreenDP{
+        display: none;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+
+    .scrollable .fullScreenDP .insideDP{
+        display: flex;
+        width: 70%;
+    }
+
+
+    .scrollable .fullScreenDP .dp{
+        width: 50%;
+        margin: auto;
+    }
+
+    .scrollable .closeBTN{
+        margin-top: 15px;
+    }
+
+    #call:hover .number{
+        display: block;
+        height: auto;
+    }
+}
