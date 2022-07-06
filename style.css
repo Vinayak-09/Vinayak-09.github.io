@@ -132,7 +132,7 @@ nav{
     max-width: 45%;
     margin: 5px;
     text-align: start;
-    width: auto;
+    width: fit-content;
     padding: 10px;
     background-color: #202c33;
     border-radius: 0px 15px 15px;
