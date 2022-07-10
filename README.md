@@ -20,6 +20,7 @@
 - Social media links
 - Download resume.
 - Map support for address
+- Random replies for hi, bye, i love you.
 
 <br><br>
 
