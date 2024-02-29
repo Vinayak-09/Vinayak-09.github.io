@@ -339,6 +339,9 @@ footer{
     border-color: transparent;
 }
 
+#send-button{
+    cursor: pointer;
+}
 
 ::placeholder { 
     color: #8696a0;
