@@ -343,6 +343,14 @@ footer{
     cursor: pointer;
 }
 
+#send-button:active {
+    transform: translateY(2px);
+}
+
+#send-button:active path{
+    fill: grey;
+}
+
 ::placeholder { 
     color: #8696a0;
     opacity: 1; 
