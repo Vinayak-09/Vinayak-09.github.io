@@ -92,21 +92,25 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Vinayak Ramchandra Patil</a>.</span><br><br>I am a Computer Engineering student at <span class='bold'>Ch. Shivaji University 👨🏻‍💻📚</span><br><br>I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the engineering sphere.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>");
+                sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Vinayak Ramchandra Patil</a>.</span><br><br>I am a <span class='bold'>Software Engineer & Team Lead 👨🏻‍💻⚙️</span>, focused on Platform/SRE and backend systems with Go, Kubernetes and Cloud.<br><br>I am currently available to join immediately, so I would be pleased to chat about job openings in the engineering sphere.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>");
             }, 2000);
             break;
         case "help":
-            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'address'</span> - to get my address<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br><span class='bold'>'about'</span> - to know about this site</span>");
+            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'experience'</span> - to know my work experience<br><span class='bold'>'address'</span> - to get my address<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br><span class='bold'>'about'</span> - to know about this site</span>");
             break;
         case "resume":
             sendTextMessage(resumeString);
             break;
         case "skills":
-            sendTextMessage("<span class='sk'>I am currently pursuing B.Tech degree in Computer Science Engineering.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Java<br>C++<br>C<br>PHP<br>Kotlin<br>Dart<br>Python<br>CSS<br>HTML</span><br><br>I've experiance with following frameworks :<span class='bold'><br>Android<br>Flutter<br>ReactJs<br>GTK</span><br><br>I use <span class='bold'>Arch Linux</span> as daily driver on my HP Pavilion 15-ec0xxx<br>OS:Arch Linux<br>DE:Gnome(More often) Kde(often)<br>Favourite IDE:VSCode</span>");
+            sendTextMessage("<span class='sk'>I hold a B.Tech in Computer Science Engineering, and currently work as a <span class='bold'>Software Engineer & Team Lead</span> focused on Platform/SRE and backend systems.<br><br>Languages I write code in :<br><span class='bold'>Go (Golang)<br>Python<br>JavaScript<br>Node.js<br>Java</span><br><br>Cloud & Infrastructure :<br><span class='bold'>Kubernetes (GKE, EKS)<br>Docker<br>GCP<br>AWS<br>Azure<br>Linux</span><br><br>CI/CD, Security & Observability :<br><span class='bold'>Bitbucket Pipelines<br>GCP Cloud Build<br>SonarQube<br>Trivy<br>Prometheus<br>Grafana<br>cAdvisor</span><br><br>I use <span class='bold'>Arch Linux</span> as my daily driver.<br>Favourite IDE : VSCode</span>");
             break;
 
         case "education":
-            sendTextMessage("I am currently pusuing B.Tech degree in Computer Science Engineering from TKIET Kolhapur<br>Passing Year : 2023<br><br>I have completed my Diploma from Government Polytechnic Karad<br>Passing Year:2020<br>Result:86.06%<br><br>I have completed my Secondary school from local school known as SWV<br>Passing Year:2016");
+            sendTextMessage("I completed my B.Tech in Computer Science Engineering from TKIET Kolhapur<br>Passing Year : 2023<br>Result : 86%<br><br>I completed my Diploma in Computer Engineering from Government Polytechnic Karad<br>Passing Year : 2020<br>Result : 86.06%<br><br>I completed my Secondary school from local school known as SWV<br>Passing Year : 2016");
+            break;
+
+        case "experience":
+            sendTextMessage("<span class='sk'>Most recently, I worked as a <span class='bold'>Software Engineer & Team Lead</span> at <span class='bold'>Pienomial Technologies Pvt Ltd</span>, Kolhapur (Jan 2023 – Jul 2026).<br><br>I'm a Platform/SRE-focused engineer with 3+ years operating production services on <span class='bold'>Kubernetes</span> (GKE, EKS), backed by 2+ years of <span class='bold'>Go</span> development.<br><br>A few highlights :<br>• Designed and shipped backend services in Go — REST & gRPC APIs, and microservices over gRPC and Redis pub/sub<br>• Built CI/CD pipelines (Bitbucket Pipelines + GCP Cloud Build), cutting release cycles from a manual 2-day process to ~20 minutes, gated on SonarQube & Trivy scans<br>• Diagnosed and root-caused production incidents using Prometheus, Grafana and cAdvisor<br>• Solely built and operated <span class='bold'>Knolens Edge</span> end-to-end — Go backend, GCP deployment, App Store/Play Store release<br>• Grew and led a team from 2 to 4 engineers across 3 concurrent projects<br><br>I'm currently available to join immediately — feel free to reach out if you're hiring! 🚀</span>");
             break;
 
         case "address":
@@ -122,7 +126,7 @@ function waitAndResponce(inputText) {
             sendTextMessage(contactString);
             break;
         case "projects":
-            sendTextMessage("You want to check my projects? Then just jump into my Github Account.<br><br><div class='social'><a target='_blank' href='https://github.com/Vinayak-09'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
+            sendTextMessage("<span class='sk'>Here are a couple of things I've worked on recently :<br><br><span class='bold'>Knolens Edge</span> — Go · Flutter · GCP Cloud Run · Kubernetes.<br>Sole developer and operator end-to-end: infrastructure, CI/CD, deployment and release management.<br><br><span class='bold'>Multi-Cloud Client Rollout</span> — AWS EKS · Docker · EFS · S3.<br>Deployed and operated a production workload on a client's AWS EKS cluster with shared persistent and artifact storage.<br><br>Want to check out more? Then just jump into my Github Account.</span><br><br><div class='social'><a target='_blank' href='https://github.com/Vinayak-09'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
             break;
         case "new":
             sendTextMessage(addressString);
